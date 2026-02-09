@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Flask App",
+            "type": "shell",
+            "command": "$env:FLASK_APP=app.py; $env:FLASK_ENV=development; flask run",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Initialize DB",
+            "type": "shell",
+            "command": "python init_db.py",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
